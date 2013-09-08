@@ -56,7 +56,7 @@ public class TxtReader
 	
 	/**
 	 * add possible linetypes to check
-	 * @param linetypes The possible linetypes
+	 * @param lineTypes The possible linetypes
 	 */
 	public void addLineTypes(List<LineType> lineTypes){
 		this.lineTypes = lineTypes;
@@ -128,7 +128,7 @@ public class TxtReader
 	/**
 	 * Static method to read a string object representing a connection between 2 data nodes
 	 * @param line the line to process
-	 * @param window the implementing input window
+	 * @param lineTypes the possible line types
 	 * @return the connection
 	 */
 	public static Connection readConnection(String line, List<LineType> lineTypes) throws IllegalArgumentException{
@@ -160,7 +160,6 @@ public class TxtReader
 	/**
 	 * static method to read a string object representing a data node
 	 * @param line the line to process
-	 * @param window the implementing input window
 	 * @return the node
 	 */
 	public static Node readSingleNode(String line) throws IllegalArgumentException{

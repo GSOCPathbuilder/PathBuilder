@@ -56,6 +56,7 @@ public class PaverPlugin implements Plugin, BundleActivator {
 	/**
 	 * Enumerator with the actions that are available in the plug-in's subMenu.
 	 *
+	 * @author Christ Leemans
 	 */
 	public static enum Action
 	{
@@ -141,7 +142,8 @@ public class PaverPlugin implements Plugin, BundleActivator {
 	}
 	/**
 	 * enumerator used to set preference's
-	 *
+	 * 
+	 * @author Christ Leemans
 	 */
 	public static enum PbPreference implements Preference
 	{
